@@ -1,28 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<!doctype html>
+<html>
+    <heat>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <title>Best Basketbal Player of All Time! </title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <link rel="stylesheet" type="text/css" href="survey.css">
 
-    <!--
+    </heat>
 
-    Hello Camper!
+    <body>
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+            
+            <h1 id="title">Please Give Us Your Opinion</h1> 
+            <p id="description">Your vote will help determined the best player of all time</p>
+            <div class="container">
+                <form id="survey-form">
+                  <label for="name" id="name-label">Please give us a Name</label>
+                  <input type="text" id="name" name="firstname" required placeholder="Your name..">
+              
+                  <label for="email" id="email-label">Your email</label>
+                  <input type="email" id="email" name="email" required placeholder="Enter a valid email address">
+                    
+                  <label for="age" id="number-label">Your age (optional)</label>
+                  <input type="number" id="number" name="age" min="13" max="99" required placeholder="Age...">
+                  
+              
+                    
+              
+                  <label for="best_anime_of_all_time" id="dropdown-label">Choose Your Best Anime of All Time</label>
+                  <select id="dropdown" name="Best Anime of All time">
+                    <option value="Bleach">Bleach</option>
+                    <option value="Naruto">Naruto</option>
+                    <option value="My Hero Academia">My Hero Academia</option>
+                    <option value="Inuyasha">Inuyasha</option>
+                    <option value="Ghoul">Ghoul</option>
+                    <option value="Baky">Baky</option>
+                    <option value="Dragon Ball Z">Dragon Ball Z</option>
+                    <option value="Gundman">Gundman</option>
+                    <option value="Mazinger">Mazinger</option>
+                  </select>
 
-    - The freeCodeCamp Teamare yo
+                  <p>What Anime Era did you enjoyed the most</p>
+                
+                    <div>
+                        <input type="radio" id="1980-1999" name="era" value="1980" checked>
+                        <label for="1980-1999">1980-1999</label>
+                    </div>
+        
+                    <div>
+                        <input type="radio" id="2000-2010" name="era" value="2000">
+                        <label for="2000-2010">2000-2010</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="2010-2020" name="era" value="2000">
+                        <label for="2010-2020">2010-2020</label>
+                    </div>
+        
+                    <div id="positions">
+                        <label for="Position" id="dropdown-postion">Choose the Character you Liked the most!</label>
+                        <select id="dropdown-postion" name="Posi">
+                            <option value="Luffy">Luffy</option>
+                            <option value="Goku">Goku</option>
+                            <option value="Ichigo">Ichigo</option>
+                            <option value="Picoro">Picoro</option>
+                            <option value="Krilling">Krilling</option>
+                            <option value="Zorro">Zorro</option>
+                            <option value="Sanji">Sanji</option>
+                        </select>
+                    </div>
 
-    -->
+                    <div id="criteria">
+                    <p> Reason Why You Choose The Best Player</p>
+                        <form id="winner">
+                        <input type="checkbox" id="Titles" name="Titles" value="Titles">
+                        <label for="Titles">Has The Most Titles</label><br>
+                        <input type="checkbox" id="MVPs"a name="MVPS" value="MVPs">
+                        <label for="MVPs">Has The Most MVPs</label><br>
+                        <input type="checkbox" id="scoring" name="scoring" value="scoring">
+                        <label for="scoring">Has The Most Scoring Titles</label><br>
+                        <input type="checkbox" id="jerseys" name="jerseys" value="jerseys">
+                        <label for="jerseys">Sells The Most Jerseys</label><br>
+                        <input type="checkbox" id="overall" name="overall" value="overall">
+                        <label for="overall">Best All Around Player</label><br>
+                     </div>
+                <div id="texting">
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" id="submit" value="Submit">
+                </div>
 
-    <h1>“Hello World!”</h1>
-    <script src="js/index.js"></script>
-  </body>
+                </form>
+              </div>
+              
+    </body>
+
+
 </html>
